@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Foot EPL top scorers  SMS App</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  width: 800px;
+}
+td.lbl {
+  font-weight: bold;
+  text-align: right;
+  valign: top;
+}
+input, textarea {
+  font-size: 14px;
+}
+h3 {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+pre {
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #A33;
+  background-color: #eee;
+  padding: 5px;
+}
+code {
+  color: #A33;
+  background-color: #eee;
+}
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+</style>
+  </head>
+  <body>
+
+    <form method="POST" action="/sms/receive">
+      <table>
+        <tr>
+          <td class="lbl">Phone</td><td><input type="text" name="phone" value="250788123123"></input></td>
+        </tr>
+        <tr>
+          <td class="lbl">Message</td><td><textarea name="text" cols=80 rows=2>foot</textarea></td>
+        </tr>
+        <tr>
+          <td></td><td><input type="submit" value="Test Message"></input></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
